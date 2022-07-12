@@ -49,13 +49,13 @@
                 &:hover>td {
                     background-color: #384459;
                 }
+
+                &:nth-child(odd) {
+                    background-color: #242c3b;
+                }
             }
         }
     }
-}
-
-.dsmeta-sales-table tbody tr:nth-child(odd) {
-    background-color: #242c3b;
 }
 
 .dsmeta-red-btn-container {
@@ -63,11 +63,7 @@
     justify-content: center;
 }
 
-.show576 {
-    display: none;
-}
-
-.show992 {
+.show576, .show992  {
     display: none;
 }
 
