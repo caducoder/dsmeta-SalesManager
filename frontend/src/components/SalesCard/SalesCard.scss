@@ -1,68 +1,86 @@
-.dsmeta-card {
-    background-color: #283142;
-    border-radius: 10px;
-    padding: 30px 10px;
+.dsmeta-sales-title {
+    color: #676fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
 
-    .dsmeta-sales-title {
-        color: #676fff;
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
+.input-button {
+    display: flex;
+    justify-content: space-between;
 
-    .dsmeta-form-control-container {
-        margin-bottom: 16px;
-        max-width: 300px;
+    a {
+        align-self: flex-end;
+        background-color: #9aaabe;
+        padding: 10px 15px;
+        border-radius: 6px;
+        color: #131313;
+        font-weight: bold;
+        transition: all .2s;
 
-        .dsmeta-form-control {
-            width: 100%;
-            height: 46px;
-            background-color: #1b2531;
-            border: 1px solid #384459;
-            border-radius: 5px;
-            color: #9aaabe;
-            padding: 0 20px;
-            font-size: 18px;
-        }
-    }
-
-    .dsmeta-sales-table {
-        width: 100%;
-        border-spacing: 0;
-        border-collapse: collapse;
-
-        thead {
-            height: 55px;
-            font-size: 16px;
-            color: #e9e9e9;
-            font-weight: 700;
-        }
-
-        tbody {
-            font-size: 14px;
-            font-weight: 400;
-            color: #cfcfcf;
-            text-align: center;
-            tr {
-                height: 74px;
-                border-top: 1px solid #5f6e82;
-
-                &:hover>td {
-                    background-color: #384459;
-                }
-
-                &:nth-child(odd) {
-                    background-color: #242c3b;
-                }
-            }
-            .dsmeta-red-btn-container {
-                display: flex;
-                justify-content: center;
-            }
+        &:hover {
+            background-color: #9aaabece;
+            
         }
     }
 }
 
-.show576, .show992  {
+.dsmeta-form-control-container {
+    margin-bottom: 16px;
+    max-width: 300px;
+
+    .dsmeta-form-control {
+        width: 100%;
+        height: 46px;
+        background-color: #1b2531;
+        border: 1px solid #384459;
+        border-radius: 5px;
+        color: #9aaabe;
+        padding: 0 20px;
+        font-size: 18px;
+    }
+}
+
+.dsmeta-sales-table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    thead {
+        height: 55px;
+        font-size: 16px;
+        color: #e9e9e9;
+        font-weight: 700;
+    }
+
+    tbody {
+        font-size: 14px;
+        font-weight: 400;
+        color: #cfcfcf;
+        text-align: center;
+
+        tr {
+            height: 74px;
+            border-top: 1px solid #5f6e82;
+
+            &:hover>td {
+                background-color: #384459;
+            }
+
+            &:nth-child(odd) {
+                background-color: #242c3b;
+            }
+        }
+
+        .dsmeta-red-btn-container {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+
+.show576,
+.show992 {
     display: none;
 }
 
@@ -71,12 +89,9 @@
         display: table-cell;
     }
 
-    .dsmeta-card {
-        padding: 35px;
-    }
-
     .dsmeta-sales-table tbody tr {
         height: 55px;
+
         tbody {
             font-size: 18px;
         }

@@ -1,5 +1,7 @@
+import { Route, Routes } from "react-router-dom"
 import Header from "./components/Header"
-import SalesCard from "./components/SalesCard"
+import CadastroDeVenda from "./pages/Cadastro"
+import Vendas from "./pages/Vendas"
 
 function App() {
   
@@ -7,11 +9,10 @@ function App() {
     <>
       <Header />
       <main>
-        <section id="sales">
-          <div className="dsmeta-container">
-            <SalesCard />
-          </div>
-        </section>
+        <Routes>
+          <Route path="/" element={<Vendas />} />
+          <Route path="/cadastro" element={<CadastroDeVenda />} />
+        </Routes>
       </main>
     </>
   )

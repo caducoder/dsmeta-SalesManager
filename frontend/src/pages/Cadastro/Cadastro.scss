@@ -1,0 +1,68 @@
+.register-title {
+  color: #676fff;
+}
+
+.form-sales-record {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    label {
+      margin: 10px 0 5px;
+    }
+
+    input {
+      width: 100%;
+      height: 46px;
+      background-color: #1b2531;
+      border: 1px solid #384459;
+      border-radius: 5px;
+      color: #9aaabe;
+      padding: 0 20px;
+      font-size: 18px;
+    }
+  }
+
+  .btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 30px 0 0;
+    gap: 20px;
+
+    .submit-button, button {
+      cursor: pointer;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 15px;
+      font-weight: bold;
+    }
+  }
+}
+
+// esconde contador em inputs numéricos
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@media (min-width: 576px) {
+  .row {
+    display: flex;
+    gap: 15px;
+
+    .date {
+      max-width: 30%;
+    }
+  }
+}
