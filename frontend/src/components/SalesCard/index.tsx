@@ -8,6 +8,7 @@ import Card from "../Card";
 import axios from "axios";
 import { BASE_URL } from "../../utils/request";
 import { Sale } from "../../models/sale";
+import { toast } from "react-toastify";
 
 
 function SalesCard() {
@@ -18,7 +19,9 @@ function SalesCard() {
 
   const handleClick = (id: number) => {
     axios(`${BASE_URL}/sales/${id}/notification`)
-    .then(resp => console.log("SUCESSO"))
+      .then(resp => {
+        toast.success('SMS enviado com sucesso!')
+      })
   }
 
   useEffect(() => {
