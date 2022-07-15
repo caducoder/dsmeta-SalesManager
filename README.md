@@ -17,13 +17,13 @@ Projeto no ar: :globe_with_meridians: [Link](https://dsmeta-sales-manager.vercel
 
 ## :movie_camera: Demonstração
 
-![](./src/assets/dsmeta.gif)
+![](./frontend/src/assets/dsmeta.gif)
 
 
 ## :camera_flash: Screenshots
 
-![App Screenshot](./src/assets/img/screenshot.png)
-![App Screenshot](./src/assets/img/screenshot2.png)
+![App Screenshot](./frontend/src/assets/img/screenshot.png)
+![App Screenshot](./frontend/src/assets/img/screenshot2.png)
 
 
 ## :gear: Rodando localmente
