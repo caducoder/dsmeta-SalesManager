@@ -1,9 +1,13 @@
 import notification from '../../assets/img/notification-icon.svg'
 import './NotificationButton.scss'
 
-function NotificationButton() {
+interface IProps {
+    onClick: () => void
+}
+
+function NotificationButton({onClick}: IProps) {
     return ( 
-        <button className='dsmeta-red-btn'>
+        <button onClick={onClick} className='dsmeta-red-btn'>
             <img src={notification} alt='' />
         </button>
      );

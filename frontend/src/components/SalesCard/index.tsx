@@ -16,6 +16,11 @@ function SalesCard() {
   const [dmax, setDmax] = useState(new Date);
   const [sales, setSales] = useState<Sale[]>([]);
 
+  const handleClick = (id: number) => {
+    axios(`${BASE_URL}/sales/${id}/notification`)
+    .then(resp => console.log("SUCESSO"))
+  }
+
   useEffect(() => {
     const minDate = dmin.toISOString().slice(0, 10)
     const maxDate = dmax.toISOString().slice(0, 10)
@@ -25,7 +30,7 @@ function SalesCard() {
       maxDate
     })
 
-    console.log(paramsString.toString());    
+    // console.log(paramsString.toString());    
 
     axios.get(`${BASE_URL}/sales?${paramsString}`)
       .then((resp: any) => setSales(resp.data.content))
@@ -86,7 +91,7 @@ function SalesCard() {
                       <td>R$ {sale.amount.toFixed(2)}</td>
                       <td>
                         <div className="dsmeta-red-btn-container">
-                          <NotificationButton />
+                          <NotificationButton onClick={() => handleClick(sale.id)}/>
                         </div>
                       </td>
                     </tr>
