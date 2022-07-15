@@ -5,7 +5,7 @@ Projeto construído na Semana Spring React 9.0, um evento realizado pelo DevSupe
 A aplicação permite filtrar as vendas por data e enviar SMS por meio da integração com a API da Twilio. \
 Adicionei a funcionalidade de cadastrar vendas e também dark mode.
 
-Projeto no ar: :globe_with_meridians: [Link]()
+Projeto no ar: :globe_with_meridians: [Link](https://dsmeta-sales-manager.vercel.app/)
 
 
 ## :hammer_and_wrench: Stack utilizada
