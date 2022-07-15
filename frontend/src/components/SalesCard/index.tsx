@@ -1,15 +1,26 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import NotificationButton from "../NotificationButton";
 import "react-datepicker/dist/react-datepicker.css";
 import DatePicker from "react-datepicker";
 import './SalesCard.scss'
 import { Link } from "react-router-dom";
 import Card from "../Card";
+import axios from "axios";
+
+interface IVenda {
+
+}
 
 function SalesCard() {
   const min = new Date(new Date().setDate(new Date().getDate() - 365));
   const [minDate, setMinDate] = useState(min);
   const [maxDate, setMaxDate] = useState(new Date);
+
+  useEffect(() => {
+    axios.get(`http://localhost:8080/sales`)
+      .then((resp: any) => console.log(resp.data))
+      
+  }, []);
 
   return (
     <Card>

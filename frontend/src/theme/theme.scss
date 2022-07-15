@@ -1,0 +1,11 @@
+:root {
+  --header: linear-gradient(180deg, #102347 0%, #181818 100%);
+  --card: #283142;
+  --main: #0c0c0c;
+}
+
+.light {
+  --header: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );
+  --card: #fdfffc;
+  --main: linear-gradient(to bottom, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);;
+}
