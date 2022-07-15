@@ -101,9 +101,7 @@ function SalesCard() {
                   )
                 })
               }
-
             </tbody>
-
           </table>
         </div>
       </div>

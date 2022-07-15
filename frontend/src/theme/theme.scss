@@ -1,11 +1,27 @@
 :root {
-  --header: linear-gradient(180deg, #102347 0%, #181818 100%);
+  --header-background: linear-gradient(180deg, #102347 0%, #181818 100%);
   --card: #283142;
   --main: #0c0c0c;
+  --title: #676fff;
+  --input-background: #1B2531;
+  --text-primary: #E9E9E9;
+  --text-secondary: #9aaabe;
+  --text-button: #131313;
+  --row-hover: #384459;
+  --row-odd: #242c3b;
+  --row-text: #cfcfcf;
 }
 
 .light {
-  --header: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );
+  --header-background: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );
   --card: #fdfffc;
-  --main: linear-gradient(to bottom, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);;
+  --main: linear-gradient(to bottom, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+  --title: #0b1b67;
+  --input-background:#ced4da;
+  --text-primary: #1A1B1E;
+  --text-secondary: #2C2E33;
+  --text-button: #f1f3f5;
+  --row-hover: #C1C2C5;
+  --row-odd: #dee2e6;
+  --row-text: #25262b;
 }

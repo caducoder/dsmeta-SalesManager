@@ -37,7 +37,9 @@ function CadastroDeVenda() {
     }
   }
 
-  const validation = () => { }
+  const validation = () => {
+    // adicionar validação
+  }
 
   return (
     <section className="secao">
@@ -108,9 +110,9 @@ function CadastroDeVenda() {
                   />
                 </div>
                 <div className="btns">
-                  <button type="button" onClick={() => navigate(-1)}>Cancelar</button>
+                  <button type="button" onClick={() => navigate(-1)}>CANCELAR</button>
                   <button type="submit" disabled={isSubmitting}>
-                    Submit
+                    ADICIONAR
                   </button>
                 </div>
               </Form>
