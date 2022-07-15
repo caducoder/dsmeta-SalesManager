@@ -89,9 +89,9 @@ function SalesCard() {
                       <td className="show992">#{sale.id}</td>
                       <td className="show576">{new Date(sale.date).toLocaleDateString()}</td>
                       <td>{sale.sellerName}</td>
-                      <td className="show992">{sale.visited}</td>
-                      <td className="show992">{sale.deals}</td>
-                      <td>R$ {sale.amount.toFixed(2)}</td>
+                      <td className="show992">{sale.visited || 'N/A'}</td>
+                      <td className="show992">{sale.deals || 'N/A'}</td>
+                      <td>R$ {sale.amount?.toFixed(2) || 'N/A'}</td>
                       <td>
                         <div className="dsmeta-red-btn-container">
                           <NotificationButton onClick={() => handleClick(sale.id)}/>

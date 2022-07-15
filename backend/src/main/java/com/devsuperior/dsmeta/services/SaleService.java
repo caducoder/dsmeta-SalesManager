@@ -31,4 +31,8 @@ public class SaleService {
 		
 		return repository.findSales(min, max, pageable);
 	}
+	
+	public Sale registerSale(Sale newSale) {
+		return repository.save(newSale);
+	}
 }
